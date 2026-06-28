@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4f46e5,#2563eb,#06b6d4);
+        }
+
+        .login-container{
+            width:380px;
+            background:#fff;
+            border-radius:15px;
+            padding:40px;
+            box-shadow:0 15px 35px rgba(0,0,0,.2);
+        }
+
+        .login-container h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#333;
+        }
+
+        .input-group{
+            position:relative;
+            margin-bottom:20px;
+        }
+
+        .input-group i{
+            position:absolute;
+            top:15px;
+            left:15px;
+            color:#777;
+        }
+
+        .input-group input{
+            width:100%;
+            padding:13px 15px 13px 45px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+            outline:none;
+            transition:.3s;
+        }
+
+        .input-group input:focus{
+            border-color:#2563eb;
+            box-shadow:0 0 8px rgba(37,99,235,.2);
+        }
+
+        .options{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            font-size:14px;
+            margin-bottom:20px;
+        }
+
+        .options a{
+            text-decoration:none;
+            color:#2563eb;
+        }
+
+        .options a:hover{
+            text-decoration:underline;
+        }
+
+        button{
+            width:100%;
+            padding:13px;
+            border:none;
+            background:#2563eb;
+            color:#fff;
+            font-size:16px;
+            border-radius:8px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+        }
+
+        .signup{
+            margin-top:25px;
+            text-align:center;
+            font-size:14px;
+        }
+
+        .signup a{
+            color:#2563eb;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .signup a:hover{
+            text-decoration:underline;
+        }
+
+        @media(max-width:420px){
+            .login-container{
+                width:90%;
+                padding:30px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="login-container">
+
+    <h2>Welcome Back</h2>
+
+    <form action="#" method="POST">
+
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+            >
+        </div>
+
+        <div class="options">
+
+            <label>
+                <input type="checkbox">
+                Remember Me
+            </label>
+
+            <a href="#">Forgot Password?</a>
+
+        </div>
+
+        <button type="submit">
+            <i class="fas fa-right-to-bracket"></i>
+            Login
+        </button>
+
+    </form>
+
+    <div class="signup">
+        Don't have an account?
+        <a href="#">Create Account</a>
+    </div>
+
+</div>
+
+</body>
+</html>

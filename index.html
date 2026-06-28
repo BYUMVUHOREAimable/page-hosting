@@ -1,181 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="rw">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
-        }
-
-        body{
-            height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:linear-gradient(135deg,#4f46e5,#2563eb,#06b6d4);
-        }
-
-        .login-container{
-            width:380px;
-            background:#fff;
-            border-radius:15px;
-            padding:40px;
-            box-shadow:0 15px 35px rgba(0,0,0,.2);
-        }
-
-        .login-container h2{
-            text-align:center;
-            margin-bottom:30px;
-            color:#333;
-        }
-
-        .input-group{
-            position:relative;
-            margin-bottom:20px;
-        }
-
-        .input-group i{
-            position:absolute;
-            top:15px;
-            left:15px;
-            color:#777;
-        }
-
-        .input-group input{
-            width:100%;
-            padding:13px 15px 13px 45px;
-            border:1px solid #ccc;
-            border-radius:8px;
-            font-size:15px;
-            outline:none;
-            transition:.3s;
-        }
-
-        .input-group input:focus{
-            border-color:#2563eb;
-            box-shadow:0 0 8px rgba(37,99,235,.2);
-        }
-
-        .options{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            font-size:14px;
-            margin-bottom:20px;
-        }
-
-        .options a{
-            text-decoration:none;
-            color:#2563eb;
-        }
-
-        .options a:hover{
-            text-decoration:underline;
-        }
-
-        button{
-            width:100%;
-            padding:13px;
-            border:none;
-            background:#2563eb;
-            color:#fff;
-            font-size:16px;
-            border-radius:8px;
-            cursor:pointer;
-            transition:.3s;
-        }
-
-        button:hover{
-            background:#1d4ed8;
-        }
-
-        .signup{
-            margin-top:25px;
-            text-align:center;
-            font-size:14px;
-        }
-
-        .signup a{
-            color:#2563eb;
-            text-decoration:none;
-            font-weight:bold;
-        }
-
-        .signup a:hover{
-            text-decoration:underline;
-        }
-
-        @media(max-width:420px){
-            .login-container{
-                width:90%;
-                padding:30px;
-            }
-        }
-
-    </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welding and Mechanical - Inzugi & Amadirishya</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif}
+body{line-height:1.6;color:#333}
+header{background:#FFD700;padding:25px;text-align:center;box-shadow:0 3px 6px rgba(0,0,0,0.1)}
+header h1{color:#000;font-size:32px;margin-bottom:5px;letter-spacing:1px}
+header p{color:#222;font-weight:600;font-size:16px}
+section{padding:60px 20px;max-width:1100px;margin:auto}
+.btn{background:#000;color:#FFD700;padding:14px 28px;border:none;border-radius:6px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold;font-size:16px}
+.btn:hover{background:#222;transform:scale(1.05);transition:0.2s}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:40px}
+.card{background:#FFFBE6;padding:30px;border-radius:12px;border-top:6px solid #FFD700;box-shadow:0 3px 10px rgba(0,0,0,0.08)}
+.contact{background:#111;color:#FFD700;text-align:center;padding:70px 20px}
+.contact a{color:#FFD700;text-decoration:none;font-size:22px;font-weight:bold}
+footer{background:#000;color:#FFD700;text-align:center;padding:25px;font-size:14px}
+.hero{background:linear-gradient(135deg, #FFFBE6 0%, #FFD700 100%);text-align:center;padding:80px 20px}
+.hero h2{font-size:36px;color:#000;margin-bottom:15px}
+</style>
 </head>
 <body>
 
-<div class="login-container">
+<header>
+<h1>WELDING AND MECHANICAL</h1>
+<p>Inzobere mu Gukora Inzugi n'Amadirishya by'Ibyuma</p>
+</header>
 
-    <h2>Welcome Back</h2>
+<section class="hero">
+<h2>Umutekano + Ubwiza ku Rugo rwawe</h2>
+<p>Dukora inzugi n'amadirishya by'ibyuma bigezweho, biramba, bidafata ingese vuba. Dukorera  mu gihugu hose. Akazi keza ku gihe.</p>
+<a href="tel:0788926489" class="btn">Tuvugishe None: 0788 926 489</a>
+</section>
 
-    <form action="#" method="POST">
-
-        <div class="input-group">
-            <i class="fas fa-envelope"></i>
-            <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required
-            >
-        </div>
-
-        <div class="input-group">
-            <i class="fas fa-lock"></i>
-            <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                required
-            >
-        </div>
-
-        <div class="options">
-
-            <label>
-                <input type="checkbox">
-                Remember Me
-            </label>
-
-            <a href="#">Forgot Password?</a>
-
-        </div>
-
-        <button type="submit">
-            <i class="fas fa-right-to-bracket"></i>
-            Login
-        </button>
-
-    </form>
-
-    <div class="signup">
-        Don't have an account?
-        <a href="#">Create Account</a>
-    </div>
-
+<section>
+<h2 style="text-align:center;margin-bottom:30px;font-size:30px;color:#000">Serivisi Zacu</h2>
+<div class="services">
+<div class="card">
+<h3 style="color:#000;margin-bottom:10px">🔒 Inzugi z'Umutekano</h3>
+<p>Inzugi z'imbere, iz'ibyumba, iz'ubiko. Zikomeye, zifite za lock zigezweho.</p>
 </div>
+<div class="card">
+<h3 style="color:#000;margin-bottom:10px">🪟 Amadirishya Agezweho</h3>
+<p>Amadirishya aslide, afunguka hanze/imbere. Atanga urumuri n'umuyaga mwiza.</p>
+</div>
+<div class="card">
+<h3 style="color:#000;margin-bottom:10px">⚡ Welding & Fabrication</h3>
+<p>Dukora ibikoresho by'ibyuma, ama machine y'ubwoko bwose, eskaliye, ibisenge by'ibyuma, etc.</p>
+</div>
+</div>
+</section>
+
+<section style="background:#FFFBE6;text-align:center">
+<h2 style="color:#000;margin-bottom:20px">Kuki Waduhitamo?</h2>
+<p style="max-width:750px;margin:auto;font-size:18px">1. Ibyuma byiza biva ku isoko <br>2. Abakozi babigize umwuga <br>3. Gukora ku gihe + ibiciro byiza <br>4. Garanti y'imyaka 2 ku kazi kacu</p>
+</section>
+
+<section class="contact">
+<h2 style="font-size:32px;margin-bottom:20px">Witeguye Kubaka?</h2>
+<p style="font-size:18px;margin-bottom:25px">Tuvugishe uyu munsi tuganire ku mushinga wawe</p>
+<a href="tel:0788926489">📞 0788 926 489</a>
+<p style="margin:15px 0">📍 Rwankuba, Buhanda</p>
+<a href="https://wa.me/250788926489" class="btn" style="background:#FFD700;color:#000">Ohereza Ubutumwa kuri WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Welding and Mechanical. Twubaka Ubuhanga, Twubaka Ejo Hazaza.
+</footer>
 
 </body>
 </html>
